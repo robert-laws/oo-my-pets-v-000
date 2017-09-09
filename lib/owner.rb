@@ -95,6 +95,6 @@ class Owner
         cat_mes = count.to_s + " and cat(s)."
       end
     end
-    message = "I have #{fish_mes} #{dog_mes} #{cat_mes}""
+    message = "I have #{fish_mes} #{dog_mes} #{cat_mes}"
   end
 end
