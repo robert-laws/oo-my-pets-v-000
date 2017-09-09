@@ -72,6 +72,6 @@ class Owner
         pet.mood = "nervous"
       end
     end
-    pets
+    @pets = []
   end
 end
