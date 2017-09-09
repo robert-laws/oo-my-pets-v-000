@@ -80,19 +80,21 @@ class Owner
   end
 
   def list_pets
-    message = "I have "
+    dog_mes = ""
+    cat_mes = ""
+    fish_mes = ""
     @pets.each do |pet_type, pets|
       if pet_type == :fishes
         count = pets.size
-        message += count.to_s + " fish, "
+        fish_mes = count.to_s + " fish, "
       elsif pet_type == :dogs
         count = pets.size
-        message += count.to_s + " dog(s), "
+        dog_mes = count.to_s + " dog(s), "
       elsif pet_type == :cats
         count = pets.size
-        message += count.to_s + " and cat(s)."
+        cat_mes = count.to_s + " and cat(s)."
       end
     end
-    message
+    message = "I have #{fish_mes} #{dog_mes} #{cat_mes}""
   end
 end
