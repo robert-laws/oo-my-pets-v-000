@@ -93,5 +93,6 @@ class Owner
         message += count + " cat(s)."
       end
     end
+    message
   end
 end
