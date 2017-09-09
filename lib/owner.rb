@@ -70,10 +70,8 @@ class Owner
     @pets.each do |pet_type, pets|
       pets.each do |pet|
         pet.mood = "nervous"
+        pet_type.delete(pet)
       end
     end
-    @pets[:fishes] = []
-    @pets[:dogs] = []
-    @pets[:cats] = []
   end
 end
