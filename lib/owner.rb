@@ -1,25 +1,26 @@
 class Owner
- attr_accessor :pets
- @@all = []
+  attr_accessor :pets
+  @@all = []
 
- def initialize
+  def initialize
   #  @pets = { fishes: [], cats: [], dogs: [] }
-   @@all << self
- end
+    owner = Owner.new
+    @@all << self
+  end
 
- def self.all
-   @@all
- end
+  def self.all
+    @@all
+  end
 
- def self.reset_all
-   @@all = []
- end
+  def self.reset_all
+    @@all = []
+  end
 
- def self.count
-   @@all.size
- end
+  def self.count
+    @@all.size
+  end
 
- def buy_(name)
+  def buy_(name)
 
- end
+  end
 end
