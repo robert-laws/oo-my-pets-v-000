@@ -96,4 +96,3 @@ class Owner
     message
   end
 end
-end
