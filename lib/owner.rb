@@ -51,4 +51,18 @@ class Owner
       dog.mood = "happy"
     end
   end
+
+  def play_with_cats
+    cats = @pets[:cats]
+    cats.each do |cat|
+      cat.mood = "happy"
+    end
+  end
+
+  def feed_fish
+    fishes = @pets[:fishes]
+    fishes.each do |fish|
+      fish.mood = "happy"
+    end
+  end
 end
