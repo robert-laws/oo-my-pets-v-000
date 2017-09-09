@@ -27,7 +27,7 @@ class Owner
   end
 
   def pets
-    @pets
+    @pets = { fishes: [], cats: [], dogs: [] }
   end
 
   def buy_fish(name)
@@ -72,6 +72,6 @@ class Owner
         pet.mood = "nervous"
       end
     end
-    @pets = { fishes: [], cats: [], dogs: [] }
+    pets
   end
 end
