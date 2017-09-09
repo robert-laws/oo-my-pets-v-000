@@ -76,6 +76,6 @@ class Owner
         pet.mood = "nervous"
       end
     end
-    pets = { fishes: [], cats: [], dogs: [] }
+    @pets = { fishes: [], cats: [], dogs: [] }
   end
 end
