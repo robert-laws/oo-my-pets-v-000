@@ -86,10 +86,10 @@ class Owner
     @pets.each do |pet_type, pets|
       if pet_type == :fishes
         count = pets.size
-        fish_mes = count.to_s + " fish, "
+        fish_mes = count.to_s + " fish,"
       elsif pet_type == :dogs
         count = pets.size
-        dog_mes = count.to_s + "dog(s), and"
+        dog_mes = count.to_s + " dog(s), and"
       elsif pet_type == :cats
         count = pets.size
         cat_mes = count.to_s + " cat(s)."
