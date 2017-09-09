@@ -82,17 +82,18 @@ class Owner
   def list_pets
     message = "I have "
     @pets.each do |pet_type, pets|
-      if pet_type == "fishes"
+      if pet_type == :fishes
         count = pets.size
-        message += count + " fish, "
-      elsif pet_type == "dogs"
+        message += count.to_s + " fish, "
+      elsif pet_type == :dogs
         count = pets.size
-        message += count + " dog(s), "
-      elsif pet_type == "cats"
+        message += count.to_s + " dog(s), "
+      elsif pet_type == :cats
         count = pets.size
-        message += count + " cat(s)."
+        message += count.to_s + " and cat(s)."
       end
     end
     message
   end
+end
 end
