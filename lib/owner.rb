@@ -89,10 +89,10 @@ class Owner
         fish_mes = count.to_s + " fish, "
       elsif pet_type == :dogs
         count = pets.size
-        dog_mes = count.to_s + "dog(s), and "
+        dog_mes = count.to_s + "dog(s), and"
       elsif pet_type == :cats
         count = pets.size
-        cat_mes = count.to_s + "cat(s)."
+        cat_mes = count.to_s + " cat(s)."
       end
     end
     message = "I have #{fish_mes} #{dog_mes} #{cat_mes}"
