@@ -71,11 +71,27 @@ class Owner
   end
 
   def sell_pets
-    @pets.each do |pet_type, pet_val|
-      pet_val.each do |pet|
+    @pets.each do |pet_type, pets|
+      pets.each do |pet|
         pet.mood = "nervous"
       end
     end
     @pets = { fishes: [], cats: [], dogs: [] }
+  end
+
+  def list_pets
+    message = "I have "
+    @pets.each do |pet_type, pets|
+      if pet_type == "fishes"
+        count = pets.size
+        message += count + " fish, "
+      elsif pet_type == "dogs"
+        count = pets.size
+        message += count + " dog(s), "
+      elsif pet_type == "cats"
+        count = pets.size
+        message += count + " cat(s)."
+      end
+    end
   end
 end
