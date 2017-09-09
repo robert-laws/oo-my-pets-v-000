@@ -21,7 +21,7 @@ class Owner
     @@all.size
   end
 
-  def buy_(name)
+  def species
 
   end
 end
